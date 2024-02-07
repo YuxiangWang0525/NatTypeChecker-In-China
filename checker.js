@@ -38,8 +38,8 @@ function parseCandidate(line) {
 
 var candidates = {};
 var pc = new RTCPeerConnection({iceServers: [
-    {urls: 'stun:stun1.l.google.com:19302'},
-    {urls: 'stun:stun2.l.google.com:19302'}
+    {urls: 'stun:stun.voipbuster.com'},
+    {urls: 'stun:stun.gmx.net'}
 ]});
 pc.createDataChannel("foo");
 pc.onicecandidate = function(e) {
